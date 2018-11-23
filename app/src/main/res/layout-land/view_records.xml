@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#34a853">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:clickable="true">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_above="@+id/fbplacename"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp" >
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="01/08/2016"
+                            android:textSize="11dp"
+                            android:textColor="#ffffff"
+                            android:id="@+id/date"
+                            android:layout_weight="0.18"
+                            android:autoText="false"
+                            android:background="#35CE50"
+                            android:textAlignment="center"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="7dp" />
+
+                        <TextView
+                            android:id="@+id/player1name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Player 1"
+                            android:textSize="11dp"
+                            android:textColor="#ffffff"
+                            android:textAlignment="center"
+                            android:layout_weight="0.18"
+                            android:maxWidth="1dp"
+                            android:background="#D32F2F"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="100"
+                            android:textSize="11dp"
+                            android:textColor="#ffffff"
+                            android:id="@+id/one"
+                            android:layout_weight="0.17"
+                            android:autoText="false"
+                            android:background="#35CE50"
+                            android:textAlignment="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text=":"
+                            android:textSize="11dp"
+                            android:textColor="#ffffff"
+                            android:id="@+id/saperator"
+                            android:layout_weight="0.02"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:autoText="false"
+                            android:background="#D32F2F"
+                            android:textAlignment="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="100"
+                            android:textSize="11dp"
+                            android:textColor="#ffffff"
+                            android:id="@+id/two"
+                            android:layout_weight="0.17"
+                            android:autoText="false"
+                            android:background="#35CE50"
+                            android:textAlignment="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+
+                        <TextView
+                            android:id="@+id/player2name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player 2"
+                            android:textSize="11dp"
+                            android:textColor="#ffffff"
+                            android:textAlignment="center"
+                            android:layout_weight="0.18"
+                            android:maxWidth="1dp"
+                            android:background="#1976D2"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+                        <Button
+                            android:layout_width="72dp"
+                            android:layout_height="29dp"
+                            android:text="Detail"
+                            android:id="@+id/id"
+                            android:layout_gravity="center_horizontal"
+                            android:onClick="showResult"
+                            android:background="#80000000"
+                            android:textColor="#ffffff" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

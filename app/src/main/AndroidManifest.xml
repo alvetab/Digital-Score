@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mirhoseini.itag">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- Needed for Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- Allows the app to access precise location. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Allows the app to connect to paired bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- Allows the app to discover and pair with bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Allows the app to initiate a phone call without going through the Dialer user interface for the user to confirm the call. -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="replace">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Launch activity automatically on boot, and re-launch if the app terminates. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainmiband2Activity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".miband2.Main">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".miband2.Main1">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".viewScores">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".helpGame">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".BLEService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivitymarcador"
+            android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".viewRecords">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMultiple">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PracticaActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pulsadores.devices.DevicesActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pulsadores.dashboard.DashboardActivity"
+            android:parentActivityName=".pulsadores.devices.DevicesActivity"/>
+        <activity android:name=".pulsadores.preferences.PreferencesActivity" android:label="@string/preferences"
+            android:parentActivityName=".pulsadores.devices.DevicesActivity"/>
+        <service android:name=".pulsadores.BluetoothLEService"/>
+        <receiver android:name=".pulsadores.receivers.LinkBackground">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".pulsadores.receivers.CapturePosition">
+            <intent-filter>
+                <action android:name="net.sylvek.itracing2.action.CAPTURE_POSITION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".pulsadores.receivers.CustomAction">
+            <intent-filter>
+                <action android:name="net.sylvek.itracing2.action.CUSTOM_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".pulsadores.receivers.ToggleVibratePhone">
+            <intent-filter>
+                <action android:name="net.sylvek.itracing2.action.STOP_VIBRATE_PHONE"/>
+                <action android:name="net.sylvek.itracing2.action.START_VIBRATE_PHONE"/>
+                <action android:name="net.sylvek.itracing2.action.TOGGLE_VIBRATE_PHONE"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".pulsadores.receivers.ToggleRingPhone">
+            <intent-filter>
+                <action android:name="com.mirhoseini.itag.pulsadores.action.TOGGLE_RING_PHONE"/>
+                <action android:name="com.mirhoseini.itag.pulsadores.action.STOP_RING_PHONE"/>
+                <action android:name="com.mirhoseini.itag.pulsadores.action.START_RING_PHONE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+        android:name="com.mirhoseini.itag.SecondActivity$MyBroadcastReceiver"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+        </intent-filter>
+    </receiver>
+
+    </application>
+
+</manifest>

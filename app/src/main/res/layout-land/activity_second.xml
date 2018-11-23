@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.mirhoseini.itag.MainActivitymarcador"
+    android:background="@drawable/bgland">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/outPut"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_below="@+id/linearLayouttimer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayoutbtn"
+            android:layout_marginTop="5dp"
+            android:touchscreenBlocksFocus="false"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Start"
+                android:id="@+id/btnStart"
+                android:background="#3f51b5"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/textViewTimer"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_below="@+id/linearLayouttimer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:width="400dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Reset"
+                android:id="@+id/btnReset"
+                android:background="#3f51b5"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/player1Txt"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_below="@+id/linearLayouttimer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/player2Txt"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_below="@+id/linearLayouttimer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/centerPart1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@+id/fbplacename"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Player 1"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/player1name"
+                    android:layout_weight="2.68"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#D32F2F"
+                    android:autoText="false" />
+
+                <TextView
+                    android:id="@+id/player1Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:maxWidth="1dp"
+                    android:background="#D32F2F"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/player1Total1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:maxWidth="1dp"
+                    android:background="#D32F2F"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/player1Total2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:maxWidth="1dp"
+                    android:background="#D32F2F"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="1 won"
+                    android:id="@+id/player1Btn"
+                    android:background="#D32F2F"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:allowUndo="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="PlayerOneWonClicked"
+                    android:layout_weight="0.15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/centerPart2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@+id/fbplacename"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Player 2"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/player2name"
+                    android:layout_weight="2.68"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="#1976D2" />
+
+                <TextView
+                    android:id="@+id/player2Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:maxWidth="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#1976D2" />
+
+                <TextView
+                    android:id="@+id/player2Total1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:maxWidth="1dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#1976D2" />
+
+                <TextView
+                    android:id="@+id/player2Total2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:maxWidth="1dp"
+                    android:background="#1976D2"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="2 won"
+                    android:id="@+id/player2Btn"
+                    android:background="#1976D2"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/player1Btn"
+                    android:layout_toEndOf="@+id/player1Btn"
+                    android:onClick="PlayerTwoWonClicked"
+                    android:layout_weight="0.15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/btnWon"
+                android:touchscreenBlocksFocus="false"
+                android:baselineAligned="false"
+                android:layout_gravity="right">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Back"
+                android:id="@+id/btnExit"
+                android:background="#80000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:allowUndo="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:width="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="gameBack" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Undo"
+                android:id="@+id/btnUndo"
+                android:background="#80000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:width="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Reset All"
+                android:id="@+id/resetAll"
+                android:background="#80000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:width="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="resetAll" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnExitUndo"
+            android:layout_marginTop="25dp"
+            android:touchscreenBlocksFocus="false"
+            android:layout_marginBottom="10dp"
+            android:baselineAligned="false">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

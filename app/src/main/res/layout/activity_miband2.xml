@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Mainmiband2Activity">
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to Blutooth"
+        android:id="@+id/btnRun"
+        android:onClick="btnRun"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRun"
+        android:id="@+id/btnTest"
+        android:text="Listen to button press"
+        android:onClick="btnTest"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTest"
+        android:id="@+id/btnSetupHearRate"
+        android:text="Setup Heart Rate Listening"
+        android:onClick="btnSetuphearRate"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSetupHearRate"
+        android:id="@+id/btnStartHearRate"
+        android:text="Start new Heart Rate"
+        android:onClick="btnTestHeartRate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPath"
+        android:layout_below="@id/btnStartHearRate"
+        android:textSize="20dp"
+        android:background="#FFFF00"
+        android:text="Path here"
+        />
+</RelativeLayout>

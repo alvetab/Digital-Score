@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iTracing2</string>
+    <string name="ble_not_supported">désolé, votre matériel ne supporte pas le Bluetooth LE</string>
+    <string name="action_scan_start">detection</string>
+    <string name="beacon_not_found">trousseau de clés non trouvé</string>
+    <string name="action_connect">connexion</string>
+    <string name="start_immediate_alert">faire sonner le trousseau de clés</string>
+    <string name="stop_immediate_alert">arrêter la sonnerie du trousseau de clés</string>
+    <string name="link_background">toujours actif</string>
+    <string name="stop_ring">arrêter la sonnerie</string>
+    <string name="stop_vibrate">arrêter la vibration</string>
+    <string name="simple_button_action">simple clic sur le trousseau de clés</string>
+    <string name="simple_button_action_summary">quelle est l\'action associée ?</string>
+    <string name="double_button_action">double clic sur le trousseau de clés</string>
+    <string name="double_button_action_summary">quelle est l\'action associée ?</string>
+    <string name="link_background_summary">permet d\'activer des options supplémentaires</string>
+    <string name="battery_info">niveau de batterie</string>
+    <string name="immediate_alert_summary">cliquer ici pour faire sonner le trousseau de clés</string>
+    <string name="welcome_text">Bienvenue sur iTracing2.\n\nCette application permet de communiquer avec vos appareils bluetooth iSee (Quintic PROXR).\n
+        Si comme moi, l\'application "iTracing" vous dérange, libre à vous d\'utiliser ma version :)\n\n
+        Cliquer sur la loupe pour trouver votre porte-clés iSee (il doit se nommer \"Quintic PROXR\").</string>
+    <string name="donate">faire un don (PayPal)</string>
+    <string name="feedback">retour d\'expérience</string>
+    <string name="donate_summary">pour m\'aider dans mon travail :)</string>
+    <string name="feedback_summary">votre aide est la bienvenue</string>
+    <string name="display_last_position">afficher la dernière position enregistrée</string>
+    <string name="out_of_range_action">perte de la liaison entre les appareils</string>
+    <string name="out_of_range_action_summary">quelle est l\'action associée ?</string>
+    <string name="action_on_power_off">perte de liaison à l\'extinction</string>
+    <string name="action_on_power_off_summary">perte de liaison si porte-clés ou le bluetooth s\'éteint</string>
+    <string name="action_bip_out_of_range">bip de l\'Itag</string>
+    <string name="action_bip_out_of_range_summary">bip is hors de portée</string>
+    <string name="ring_tone_summary">sélectionner la sonnerie en rapport aux actions</string>
+    <string name="ring_tone">sonnerie</string>
+    <string name="rssi_info">qualité du signal</string>
+    <string name="actions">action depuis le porte-clés</string>
+    <string name="select_device">sélectionner un appareil</string>
+    <string name="ring_tone_not_found">sonnerie non trouvée, s\'il vous plait, sélectionnez-en une autre</string>
+    <string name="vibrator_not_found">vibrateur non trouvé! assurez-vous que vous disposez de cette fonctionnalité sur votre téléphone.</string>
+    <string name="something_goes_wrong">quelque chose n\'a pas fonctionné comme prévu!</string>
+    <string name="double_button_delay">délai en millisecondes</string>
+    <string name="double_button_delay_summary">délai entre deux clics sur le bouton</string>
+    <string name="default_double_button_delay">300</string>
+    <string name="custom_action">action personnalisée</string>
+    <string name="custom_action_summary">http(s)://..</string>
+    <string name="remove">supprimer le trousseau de clés</string>
+    <string name="confirm_remove_keyring">Confirmer pour supprimer ce trousseau de clés</string>
+    <string name="confirm_change_name">Changer le nom du trousseau de clés</string>
+    <string name="link_loss_disabled">désactiver cette option pourrait faire sonner votre trousseau de clés</string>
+    <string name="foreground_started">démarré en premier plan</string>
+    <string name="preferences">préférences</string>
+    <string name="dashboard">tableau de bord</string>
+    <string name="action_foreground_summary">améliore le lien entre le téléphone et les trousseaux de clés</string>
+    <string name="action_foreground">service en premier plan</string>
+    <string name="ring_the_device">sonner le trousseau de clés</string>
+    <string name="events_history">historique</string>
+    <string name="connected_action">action à la connexion</string>
+    <string name="connected_action_summary">action déclenchée lorsque la connexion se produit</string>
+    <string name="clear_events">supprimer tous les événements</string>
+    <string name="confirm_remove_events">Confirmer la suppression des événements</string>
+    <string name="export_events">exporter les événements</string>
+    <string-array name="button_actions">
+        <item>basculer en mode sonnerie</item>
+        <item>faire sonner le téléphone</item>
+        <item>arrêter la sonnerie</item>
+        <item>basculer en mode vibration</item>
+        <item>faire vibrer le téléphone</item>
+        <item>arrêter les vibrations</item>
+        <item>capturer ma position</item>
+        <item>appeler une URL ou une action</item>
+    </string-array>
+    <string-array name="button_actions_values">
+        <item>TOGGLE_RING_PHONE</item>
+        <item>START_RING_PHONE</item>
+        <item>STOP_RING_PHONE</item>
+        <item>TOGGLE_VIBRATE_PHONE</item>
+        <item>START_VIBRATE_PHONE</item>
+        <item>STOP_VIBRATE_PHONE</item>
+        <item>CAPTURE_POSITION</item>
+        <item>CUSTOM_ACTION</item>
+    </string-array>
+    <string-array name="empty_array"/>
+</resources>
